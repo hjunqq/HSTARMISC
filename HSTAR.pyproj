@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{b48d491d-41ce-4c0f-b883-cd7c0fcd9d38}</ProjectGuid>
+    <ProjectHome />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>CondaEnv|CondaEnv|hstar</InterpreterId>
+    <StartupFile>Tunnel\get_rotation_angler.py</StartupFile>
+    <IsWindowsApplication>False</IsWindowsApplication>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="CheckGaps.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FourParameter\CompressABCD.py" />
+    <Compile Include="FourParameter\Comp_Stres_UC.py" />
+    <Compile Include="FourParameter\Comp_Stres_UT.py" />
+    <Compile Include="FourParameter\DamageBase.py" />
+    <Compile Include="FourParameter\devplane.py" />
+    <Compile Include="FourParameter\devplanecurve.py" />
+    <Compile Include="FourParameter\FourExperimentData.py" />
+    <Compile Include="FourParameter\FourParameter.py" />
+    <Compile Include="FourParameter\FourParameterPossion.py" />
+    <Compile Include="FourParameter\GetEquivalentStress.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FourParameter\LodeSystem.py" />
+    <Compile Include="FourParameter\Mazars\substract.py" />
+    <Compile Include="FourParameter\PlotCompareCurve.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FourParameter\PlotFItABCD.py" />
+    <Compile Include="FourParameter\PlotNooruRes.py" />
+    <Compile Include="FourParameter\plotRes.py" />
+    <Compile Include="FourParameter\PlotResAndRefBC.py" />
+    <Compile Include="FourParameter\PlotResAndRefBC_Func.py" />
+    <Compile Include="FourParameter\PlotResAndRefTC.py" />
+    <Compile Include="FourParameter\PlotResAndRefUC.py" />
+    <Compile Include="FourParameter\PlotResAndRefUT.py" />
+    <Compile Include="FourParameter\plotToumiRes.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FourParameter\plotVari4Para.py" />
+    <Compile Include="FourParameter\PlotVaryCurve.py" />
+    <Compile Include="FourParameter\PoissonOttosen.py" />
+    <Compile Include="FourParameter\PoissonPoly.py" />
+    <Compile Include="FourParameter\Posion.py" />
+    <Compile Include="FourParameter\ReadAct.py" />
+    <Compile Include="FourParameter\SolveABCD.py" />
+    <Compile Include="FourParameter\stress.py" />
+    <Compile Include="FourParameter\WJYRes.py" />
+    <Compile Include="GapStatus.py" />
+    <Compile Include="GidPost\gidpost.py" />
+    <Compile Include="helper.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parallel\plotHHUHPC.py" />
+    <Compile Include="Parallel\plotPETSc.py" />
+    <Compile Include="Parallel\plotTH.py" />
+    <Compile Include="plotData.py" />
+    <Compile Include="PSD.py" />
+    <Compile Include="pytools.py" />
+    <Compile Include="ShaPai\plot_iter.py" />
+    <Compile Include="ShaPai\plot_res.py" />
+    <Compile Include="Tunnel\get_rotation_angler.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FourParameter\Figs\A.png" />
+    <Content Include="FourParameter\Figs\ABCD.png" />
+    <Content Include="FourParameter\Figs\B.png" />
+    <Content Include="FourParameter\Figs\BC.png" />
+    <Content Include="FourParameter\Figs\BC_Fix.png" />
+    <Content Include="FourParameter\Figs\C.png" />
+    <Content Include="FourParameter\Figs\Comp_Stress_UC.png" />
+    <Content Include="FourParameter\Figs\D.png" />
+    <Content Include="FourParameter\Figs\TC.png" />
+    <Content Include="FourParameter\Figs\TC_Fix.png" />
+    <Content Include="FourParameter\Figs\UC.png" />
+    <Content Include="FourParameter\Figs\UC_Comp.png" />
+    <Content Include="FourParameter\Figs\UC_Fix.png" />
+    <Content Include="FourParameter\Figs\UT.png" />
+    <Content Include="FourParameter\Figs\UT_Comp.png" />
+    <Content Include="FourParameter\Figs\UT_Fix.png" />
+    <Content Include="FourParameter\Mazars\Biaxial.txt" />
+    <Content Include="FourParameter\Mazars\Biaxial_S1.txt" />
+    <Content Include="FourParameter\Mazars\Biaxial_S2.txt" />
+    <Content Include="FourParameter\Mazars\Biaxial_S3.txt" />
+    <Content Include="FourParameter\Mazars\ChenHF.JPG" />
+    <Content Include="FourParameter\Mazars\ChenHF.PNG" />
+    <Content Include="FourParameter\Mazars\figure_1.png" />
+    <Content Include="FourParameter\Mazars\kupfer.jpg" />
+    <Content Include="FourParameter\Mazars\kupfer.txt" />
+    <Content Include="FourParameter\Mazars\kupfer_s1.txt" />
+    <Content Include="FourParameter\Mazars\kupfer_s2.txt" />
+    <Content Include="FourParameter\Mazars\Mazars.jpg" />
+    <Content Include="FourParameter\Mazars\Mazars.txt" />
+    <Content Include="FourParameter\Mazars\Triaxial.txt" />
+    <Content Include="FourParameter\Mazars\Triaxial_S1.txt" />
+    <Content Include="FourParameter\Mazars\Triaxial_S2.txt" />
+    <Content Include="FourParameter\Mazars\Triaxial_S3.txt" />
+    <Content Include="FourParameter\Mazars\Tri_Axial_页面_1.jpg" />
+    <Content Include="FourParameter\Mazars\Tri_Axial_页面_2.jpg" />
+    <Content Include="FourParameter\Mazars\Tri_Axial_页面_3.jpg" />
+    <Content Include="FourParameter\Mazars\Tri_Axial_页面_4.jpg" />
+    <Content Include="FourParameter\Mazars\Tri_Axial_页面_5.jpg" />
+    <Content Include="FourParameter\Mazars\Tri_Axial_页面_6.jpg" />
+    <Content Include="FourParameter\Mazars\Tri_Axial_页面_7.jpg" />
+    <Content Include="FourParameter\Mazars\Tri_Axial_页面_8.jpg" />
+    <Content Include="FourParameter\Mazars\Tri_Axial_页面_9.jpg" />
+    <Content Include="FourParameter\Mazars\Tri_Eq1.txt" />
+    <Content Include="FourParameter\Mazars\Tri_Eq3.txt" />
+    <Content Include="FourParameter\Mazars\Tri_Equal.txt" />
+    <Content Include="FourParameter\Mazars\Uniaxial.jpg" />
+    <Content Include="FourParameter\Mazars\Uniaxial.txt" />
+    <Content Include="FourParameter\Mazars\Uniaxial_S1.txt" />
+    <Content Include="FourParameter\Mazars\Uniaxial_T.txt" />
+    <Content Include="FourParameter\strain.txt" />
+    <Content Include="GidPost\gidpost.lib" />
+    <Content Include="GidPost\gidpostd.lib" />
+    <Content Include="GidPost\hdf5.lib" />
+    <Content Include="GidPost\hdf5d.lib" />
+    <Content Include="GidPost\zlib.lib" />
+    <Content Include="Parallel\HHUHPC.dat" />
+    <Content Include="Parallel\HHUHPCAccFst.pdf" />
+    <Content Include="Parallel\HHUHPCTimeFst.pdf" />
+    <Content Include="Parallel\PETSc.dat" />
+    <Content Include="Parallel\PETSc100KAcc.pdf" />
+    <Content Include="Parallel\PETSc100KTime.pdf" />
+    <Content Include="Parallel\TH.dat" />
+    <Content Include="Parallel\THAccFst.pdf" />
+    <Content Include="Parallel\THAccSnd.pdf" />
+    <Content Include="Parallel\THTimeFst.pdf" />
+    <Content Include="Parallel\THTimeSnd.pdf" />
+    <Content Include="SampleData.txt" />
+    <Content Include="Tunnel\Test_Numerical.pdf" />
+    <Content Include="Tunnel\ZhangShengLongTest\1000.dat" />
+    <Content Include="Tunnel\ZhangShengLongTest\1500.dat" />
+    <Content Include="Tunnel\ZhangShengLongTest\2000.dat" />
+    <Content Include="Tunnel\ZhangShengLongTest\2500.dat" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FourParameter" />
+    <Folder Include="FourParameter\Figs" />
+    <Folder Include="FourParameter\Mazars" />
+    <Folder Include="GidPost\" />
+    <Folder Include="Parallel\" />
+    <Folder Include="PSD\" />
+    <Folder Include="ShaPai\" />
+    <Folder Include="Tunnel\" />
+    <Folder Include="Tunnel\ZhangShengLongTest\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="CondaEnv|CondaEnv|hstar" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>

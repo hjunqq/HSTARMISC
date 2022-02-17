@@ -1,0 +1,14 @@
+{
+    "python.pythonPath": "C:\\Users\\qhjun\\.conda\\envs\\hstar\\python.exe",
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        ".",
+        "-p",
+        "test_*.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.unittestEnabled": true,
+    "python.linting.pylintEnabled": true
+}
