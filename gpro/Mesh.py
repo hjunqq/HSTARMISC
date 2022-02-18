@@ -7,6 +7,7 @@ class Group:
 
     def __init__(self, index=0):
         self.index = index
+        self.elements = []
 
     def set_element(self, elements):
         self.elements = elements
@@ -42,11 +43,13 @@ class Mesh:
     n_element = 0
     node = []
     element = []
+    group = []
 
     def __init__(self, file_path):
         self.file_path = file_path
 
     def read(self):
+        c_group = None
         with open(self.file_path, 'r') as f:
             for line in f:
                 vals = line.split()
@@ -60,7 +63,12 @@ class Mesh:
                     dest = -1
 
                 if dest == 0:
-                    group = Group()
+                    if c_group is None:
+                        c_group = Group()
+                    else:
+                        self.group.append(c_group)
+                        c_group = Group()
+
 
                 if isint(vals[0]):
                     if dest == 1:
@@ -71,7 +79,8 @@ class Mesh:
                         elem = Element(int(vals[0]), list(map(int, vals[1:-1])))
                         group_index = int(vals[-1])
                         elem.set_group(group_index)
-                        group.add_elem(elem)
+                        c_group.add_elem(elem)
                         self.n_element += 1
                         self.element.append(elem)
+            self.group.append(c_group)
         print(self.n_node, self.n_element)
